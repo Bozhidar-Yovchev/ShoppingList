@@ -21,7 +21,7 @@ namespace ShoppingList
             {
                 if (value.ToLower() == string.Empty )
                 {
-                    throw new ArgumentException("Трябва да въведете валидно име");
+                    throw new ArgumentException("It can't be a product without a name");
                    
                 }
                 productName = value;

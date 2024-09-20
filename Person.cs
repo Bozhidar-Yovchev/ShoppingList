@@ -19,7 +19,7 @@ namespace ShoppingList
             {
                 if (value.ToLower() == string.Empty)
                 {
-                    throw new ArgumentException("Няма човек без име");
+                    throw new ArgumentException("There is not a person without a name");
                 }
                 name = value;
             }
@@ -31,8 +31,7 @@ namespace ShoppingList
             {
                 if ( value <=0 )
                 {
-                    throw new ArgumentException("Парите трябва да са положително число");
-                    
+                    throw new ArgumentException("The price of the product can't be negative");
                 }
                 money = value;
             }
